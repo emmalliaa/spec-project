@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sticky-sidebar{
+
+    writing-mode: vertical-rl;
+    font-family: ethnocentric,sans-serif;
+    font-size: xx-large;
+    color: black;
+    float: left;
+    position: fixed;
+    display: flex;
+    text-shadow:  2px 2px 9px rgb(248, 239, 153);
+    
+    
+}
