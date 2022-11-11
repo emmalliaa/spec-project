@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: rgb(240, 240, 240);
+    background-color:beige;
+    font-family: 'Teko', sans-serif;
 }
 .navbar{
     position: fixed;
@@ -16,7 +17,9 @@ body{
     display: flex;
     justify-content: space-between;
 
-
+}
+.logo-name{
+    font-size: 3rem;
 }
 .menu{
     display: flex;
@@ -26,22 +29,27 @@ body{
 }
 ul{
    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 400;
+
 }
 li a{
     text-decoration: none;
+
+
 }
 .container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 370px;
+    width: 400px;
     height: 555px;
 }
 .block{
-
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 .b-1{
      background: url("../image/picture-1.jpg") ;
@@ -52,4 +60,17 @@ li a{
     background: url("../image/picture-2.jpg");
     background-size: cover;
 
+}
+.b-3{
+    background: url("../image/picture-3.jpg");
+    background-size: cover;
+}
+
+.title{
+    margin-top: 20rem;
+    text-align: center;
+    font-size: 8rem;
+    color:rgb(42, 39, 39);
+    overflow: hidden;
+    text-transform: uppercase;
 }
