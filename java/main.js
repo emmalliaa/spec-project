@@ -1,36 +1,45 @@
-TweenMax.staggerFrom(".container > .block", 1,{
-    y:"110%",
-    delay: 0.1,
-    ease:Expo.easeInOut
 
-},
-0.5);
-
-TweenMax.to(".container",2,{
-    scale:"1",
+gsap.to(".container",{duration:2,
     y:"90%",
-    ease:Expo.easeInOut,
-    delay:1.2,
+    ease:"Expo.in",
+    delay:2.8,
 });
 
-TweenMax.to(".container",2,{
-    scale:"2",
-    y:"90%",
-    ease:Expo.easeInOut,
-    delay:1.2,
+
+gsap.from(".logo-name",{
+    opacity:0,
+    y:-100,
+    ease:"Expo.in",
+    delay:0,
+
+    
+
 });
 
-TweenMax.staggerFrom(".navbar>.logo-name",1,{
+gsap.from(".menu-item",{duration:1.1,
     opacity:0,
     y:-100,
-    ease:Expo.easeInOut,
-    delay:1,
-},0.1);
+    ease:"Power2.easeOut",
+    delay:2.7 ,
 
-TweenMax.staggerFrom(".navbar>.menu>.menu-item",1,{
-    opacity:0,
-    y:-100,
-    ease:Power2.easeOut,
-    delay:1 ,
+});
 
-},0.1);
+gsap.to(".container",{duration:2,
+    y:"0%",
+    ease:"expo",
+    delay:5.8,
+});
+
+function first() {
+    var tl= gsap.timeline();
+    tl.from(".block", {y:900,ease:"Expo.in",stagger:{each:0.9,}});
+    tl.to(".container",)
+
+    return tl;
+}
+var final= gsap.timeline();
+final.add(first())
+
+
+
+ 
