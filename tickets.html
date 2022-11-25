@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tickets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -10,10 +11,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo-name">Cinegram</div>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">What to watch</a></li>
+            <li class="menu-item"><a href="tickets.html">Buy tickets</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="sala">
+            <h1>Pick your seat</h1>
+                <div class="seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <p class="#text">You have selected <span id="number">0</span> seats for <span id="movie" >..</span> <br> You will pay <span id="total"></span>dkk.</p>
+        </div>
+        <div class="images">
+            <img id="img-1" src="./image/picture-1.jpg" alt=""> <br>
+            <button onclick="changeImg('./image/picture-1.jpg')">Dead Poets Society</button>
+            <button onclick="changeImg('./image/picture-2.jpg')">Black Swan</button>
+            <button onclick="changeImg('./image/picture-3.jpg')">Perfect Blue</button>
+        </div>
 
+
+    </div>
      <!-- gsap -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-     <script src="java/main.js"></script>
+     <script src="java/tickets.js"></script>
 
 </body>
 </html>
